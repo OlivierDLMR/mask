@@ -18,16 +18,13 @@ export default function App() {
                 let iconName;
 
                 if (route.name === 'Home') {
-                    iconName = focused
-                        ? 'ios-home'
-                        : 'ios-home-outline';
+                    iconName = 'ios-home';
                 } else if (route.name === 'Search') {
-                    iconName = focused ? 'ios-search-box' : 'ios-search';
+                    iconName = 'ios-search';
                 }else if (route.name === 'Add') {
-                    iconName = focused ? 'ios-add-circle-box' : 'ios-add-circle';
+                    iconName = 'ios-add-circle';
                 }
 
-                // You can return any component that you like here!
                 return <Ionicons name={iconName} size={size} color={color} />;
             },
         })}
