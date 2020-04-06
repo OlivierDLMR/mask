@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
 import {SearchBar} from "react-native-elements";
 
 
@@ -17,7 +16,7 @@ class Search extends Component {
 
         return (
             <SearchBar
-                placeholder="Type Here..."
+                placeholder="Rechercher"
                 onChangeText={this.updateSearch}
                 value={search}
             />
